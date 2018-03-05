@@ -2,7 +2,6 @@ package css.cis3334.heartratetracker;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,7 +48,7 @@ public class HeartRateAdapter  extends ArrayAdapter<HeartRate> {
         //get the heart rate we are displaying
         HeartRate hr = hrList.getHeartRate(position);
 
-        TextView tvPulse=(TextView)view.findViewById(R.id.textViewPulse);
+        TextView tvPulse=(TextView)view.findViewById(R.id.textViewPulseDetail);
         tvPulse.setText(hr.getPulse().toString());
 
         return(view);
